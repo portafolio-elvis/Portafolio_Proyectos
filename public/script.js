@@ -122,9 +122,12 @@ contactForm.addEventListener('submit', async (e) => {
         btn.disabled         = false;
       }, 3500);
     } else {
-      throw new Error();
+      const data = await res.json().catch(() => ({}));
+      console.error('Formspree error:', res.status, data);
+      throw new Error(data?.error || res.status);
     }
-  } catch {
+  } catch (err) {
+    console.error('Submit error:', err);
     btn.textContent      = 'Error al enviar. Intenta de nuevo.';
     btn.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
     btn.style.color      = '#fff';
