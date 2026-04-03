@@ -91,12 +91,4 @@ vercel
 
 ---
 
-## Contacto
-
-- **Email:** elvis.codev@gmail.com
-- **GitHub:** [portafolio-elvis](https://github.com/portafolio-elvis)
-- **LinkedIn:** [elvisandrade](https://linkedin.com/in/elvisandrade)
-
----
-
 © 2026 Elvis Andrade
